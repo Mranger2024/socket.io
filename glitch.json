@@ -1,6 +1,6 @@
 {
-  "install": "pnpm install",
-  "start": "pnpm run build && pnpm start",
+  "install": "chmod +x start.sh",
+  "start": "./start.sh",
   "watch": {
     "install": {
       "include": [
