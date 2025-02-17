@@ -1,11 +1,16 @@
-#!/bin/bash
-export NODE_VERSION=16.20.0
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-nvm install $NODE_VERSION
-nvm use $NODE_VERSION
+#!/usr/bin/env bash
 
-# Install dependencies and start the server
+# Ensure we're in the right directory
+cd "$(dirname "$0")"
+
+# Install dependencies
+echo "Installing dependencies..."
 pnpm install
+
+# Build TypeScript
+echo "Building TypeScript..."
 pnpm run build
-PORT=3000 node dist/index.js
+
+# Start the server
+echo "Starting server..."
+PORT=3000 pnpm start
