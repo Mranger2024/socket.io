@@ -1,6 +1,6 @@
 {
-  "install": "npm install",
-  "start": "npm run build && npm start",
+  "install": "pnpm install",
+  "start": "pnpm run build && pnpm start",
   "watch": {
     "install": {
       "include": [
