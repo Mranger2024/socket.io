@@ -1,0 +1,15 @@
+{
+  "name": "nextmeet-socket-server",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsx index.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "tsx": "^4.7.1",
+    "typescript": "^5"
+  }
+}
