@@ -1,17 +1,7 @@
 {
-  "install": "chmod +x start.sh",
-  "start": "./start.sh",
+  "install": "pnpm install",
+  "start": "pnpm start",
   "watch": {
-    "install": {
-      "include": [
-        "^package\\.json$"
-      ]
-    },
-    "restart": {
-      "include": [
-        "^dist/"
-      ]
-    },
     "throttle": 1000
   }
 }
